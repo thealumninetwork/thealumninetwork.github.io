@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="images/logo.jpg" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  	<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+
+    <style>
+    	.bg-img{
+    		height: 95vh;
+    		background: url("images/cover.jpg") no-repeat center center fixed;
+    		-webkit-background-size: cover;
+    		-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+    	}
+    </style>
+    
+    <title>CAMS | Centralised Alumni Management System</title>
+</head>
+
+<body style="background-color: #cecece">
+	<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #6c6c93">
+	    <div class="container">
+	      	<a class="navbar-brand" href="#">CAMS</a>
+	      	<button class="navbar-toggler" data-toggle="collapse" data-target=".navbarNav">
+	        	<span class="navbar-toggler-icon"></span>
+	      	</button>
+	      	<div class="collapse navbar-collapse navbarNav" >
+	        	<ul class="navbar-nav">
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="#about">Features</a>
+	          		</li>
+		          	<li class="nav-item">
+		            	<a class="nav-link" href="#contact">Contact</a>
+		          	</li>
+		          	<li class="nav-item">
+	            		<a class="nav-link" href="alumni/registrationform.php">Register</a>
+	          		</li>
+		          	<li class="nav-item dropdown">
+		            	<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-sign-in-alt"></i> Login</a>
+		            	<div class="dropdown-menu">
+		              		<a href="alumni/signinform.php" class="dropdown-item"><i class="fas fa-graduation-cap"></i> As Alumni</a>
+		              		<a href="institution/inst_sign_in.php" class="dropdown-item"><i class="fas fa-university"></i> As Institute</a>
+		              		<a href="admin/login.php" class="dropdown-item"><i class="fas fa-user-cog"></i> As Admin</a>
+		            	</div>
+		          	</li>
+		          	<li class="nav-item dropdown">
+			            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-globe-americas"></i> Translate</a>
+			            <div class="dropdown-menu">
+			              	<div class="dropdown-item" id="google_translate_element"></div>
+			            </div>
+			        </li>
+	        	</ul>
+	      	</div>
+	    </div>
+	</nav>
+
+	<div class="bg-img">
+		<div class="container d-flex h-100">
+			<div class="row justify-content-center align-self-center">
+		    	<p class="text-white text-left p-2" style="font-family: 'Niramit', sans-serif; font-size: 35px;">Centralised Alumni Management System (CAMS) is a hassle-free alumni management and social media platform.</p>
+		    </div>
+		</div>
+	</div>
+
+	 <div style="background-color: white" id="about">
+
+	 	<h3 style="font-family: 'Niramit', sans-serif;" class="text-center p-5">Features we offer</h3>
+
+	 	<div class="container">
+
+	 		<div class="row">
+	 			<div class="col-sm d-flex align-items-stretch">
+	 				<div class="card border-light bg-white mt-4 w-100">
+					  <img class="card-img-top" src="images/1.jpg" alt="Card image cap" width="200" height="250">
+					  <div class="card-body">
+					    <h5 class="card-title text-center">Connect</h5>
+					    <p class="card-text text-center">Connect with your friends and your alma mater with our platform.</p>
+					  </div>
+					</div>
+	 			</div>
+	 			<div class="col-sm d-flex align-items-stretch">
+	 				<div class="card text-dark border-light bg-white mt-4 w-100">
+					  <img class="card-img-top" src="images/2.jpg" alt="Card image cap" width="200" height="250">
+					  <div class="card-body">
+					    <h5 class="card-title text-center">Alumni Search</h5>
+					    <p class="card-text text-center">Find your fellow-alumni from around the globe. Interact, Collaborate and more.  </p>
+					  </div>
+					</div>
+	 			</div>
+	 			<div class="col-sm d-flex align-items-stretch">
+	 				<div class="card text-dark border-light bg-white mt-4 w-100">
+					  <img class="card-img-top" src="images/3.jpg" alt="Card image cap" width="200" height="250">
+					  <div class="card-body">
+					    <h5 class="card-title text-center">Broadcast</h5>
+					    <p class="card-text text-center">Easily send messages/notices to individuals or groups with just a single click.</p>
+					  </div>
+					</div>
+	 			</div>
+	 		</div>
+
+	 		<div class="row">
+	 			<div class="col-sm d-flex align-items-stretch">
+	 				<div class="card text-dark border-light bg-white mt-4 w-100">
+					  <img class="card-img-top" src="images/4.jpg" alt="Card image cap" width="200" height="250">
+					  <div class="card-body">
+					    <h5 class="card-title text-center">Share Ideas</h5>
+					    <p class="card-text text-center">Share latest news, updates or ideas with your connections and alma mater.</p>
+					  </div>
+					</div>
+	 			</div>
+	 			<div class="col-sm d-flex align-items-stretch">
+	 				<div class="card text-dark border-light bg-white mt-4 w-100">
+					  <img class="card-img-top" src="images/5.jpg" alt="Card image cap" width="200" height="250">
+					  <div class="card-body">
+					    <h5 class="card-title text-center">Documents</h5>
+					    <p class="card-text text-center">Upload and archive verified documents for use in job applications.</p>
+					  </div>
+					</div>
+	 			</div>
+	 			<div class="col-sm d-flex align-items-stretch">
+	 				<div class="card text-dark border-light bg-white mt-4 w-100">
+					  <img class="card-img-top" src="images/6.jpg" alt="Card image cap" width="200" height="250">
+					  <div class="card-body">
+					    <h5 class="card-title text-center">Events</h5>
+					    <p class="card-text text-center">Never miss any updates on seminars or special event hosted by your institution.</p>
+					  </div>
+					</div>
+	 			</div>
+	 		</div>	 		
+	 	</div>
+	 	<h5 class="text-center p-5" style="font-family: 'Niramit', sans-serif;">and many more...</h5>
+	 </div>
+
+
+	<!-- <div class="container" id="contact">
+	 	<h3 class="text-center pt-5" style="font-family: 'Niramit', sans-serif;">Contact Us</h3>
+	 	<div class="col-sm-7 mx-auto">
+		 	<form action="#" method="post" class="m-5">
+		 		<div class="form-group mb-4">
+	                <input type="text" class="form-control" pattern="[^'\x22\x2A\x2D\x2F%?:_()]+" placeholder="Enter name" id="name" name="name">
+	            </div>
+	            <div class="form-group mb-4">
+	                <input type="email" class="form-control" pattern="[^'\x22\x2A\x2F%?:()]+" placeholder="Enter Email" id="email" name="email1" required>
+	            </div>
+	            <div class="form-group mb-4">
+	                <textarea id="qry" rows="5" placeholder="State your query within 1500 characters" class="form-control" name="query" maxlength="2000" required></textarea>
+	            </div>
+	            <center>
+	                <button type="submit" name="btn" class="btn btn-secondary w-50 mt-3">Submit</button>
+	            </center>    
+		 	</form>
+		</div>
+	 </div> -->
+
+	 <footer class="bg-dark text-light text-center pt-3" style="width:100%;height:60px;">
+		  <small>&copy; 2019 CAMS</small>
+	</footer>
+
+ <!--  <?php
+	if(isset($_POST["btn"]))
+	{
+		include("connect.php");
+		$nm=$_POST["name"];
+		$em=$_POST["email1"];
+		$qr=base64_encode($_POST["query"]);
+
+		$n=mysqli_query($con,"insert into query_info(name,email,queries,status)values('".$nm."','".$em."','".$qr."','unread')");
+		if($n == 1)
+		{
+			echo "<script>alert('Thank you for contacting CAMS. We will get in touch with you very soon.')</script>";
+			echo "<script>window.location.href='index.php'</script>";
+		}
+		else
+		{
+			echo "<script>alert('An error occurred.')</script>";
+			echo "<script>window.location.href='index.php'</script>";
+		}
+	}
+  ?> -->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+	    function googleTranslateElementInit() {
+	      new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	    }
+  	</script>
+
+  	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
